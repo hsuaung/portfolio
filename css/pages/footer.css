@@ -1,0 +1,7 @@
+footer {
+    background-color: var(--bg-color);
+    text-align: center;
+    font-size: 14px;
+    padding: 12px;
+    border-top: 1px solid gainsboro;
+}

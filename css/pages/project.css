@@ -1,0 +1,88 @@
+/* project section  */
+.project {
+    background-color: var(--second-bg-color);
+}
+
+.project-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 5rem;
+}
+
+.row {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.row img {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), #a7c957);
+    position: absolute;
+    border-radius: 8px;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 40px;
+    transition: 0.5s;
+}
+
+.layer h5 {
+    margin-top: 20px;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.layer div {
+    line-height: 1.8;
+    display: flex;
+    gap: 1rem;
+}
+
+.layer div i {
+    font-size: 20px;
+}
+
+.layer a {
+    background-color: var(--main-color);
+    margin-top: 20px;
+    font-size: 20px;
+    color: var(--text-color);
+    width: auto;
+    height: auto;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.layer a:hover {
+    background-color: var(--text-color);
+    color: var(--main-color);
+}
+
+.row:hover {
+    transform: scale(1.1);
+}
+
+.row:hover .layer {
+    width: 100%;
+    height: 100%;
+}
